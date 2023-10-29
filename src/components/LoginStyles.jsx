@@ -6,6 +6,10 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 0 20px;
+  @media (min-width: 640px) {
+    padding: 0 0px;
+  }
 `;
 
 export const DesktopView = styled.div`
@@ -18,7 +22,9 @@ export const DesktopView = styled.div`
 
 export const ImageContainer = styled.div`
   width: 50%;
+  display: block;
   @media (max-width: 768px) {
+    display: none;
     width: 100%;
   }
 `;
@@ -124,6 +130,6 @@ export const CheckBoxInput = styled.input`
 `;
 
 export const CustomLink = styled.a`
-  color: #F78719;
+  color: #f78719;
   text-decoration: none;
 `;
